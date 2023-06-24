@@ -1,0 +1,70 @@
+<header>
+  <h1>Register a New Customer</h1>
+</header>
+<body>
+  <div class="col-md-6 offset-md-3">
+    <form (ngSubmit)="onSubmit()" class="register-form" #customerForm="ngForm">
+      <!-- Customer Details -->
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="First name" [(ngModel)]="customer.firstName" name="firstName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Last name" [(ngModel)]="customer.lastName" name="lastName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mobileNumber">Mobile Number</label>
+        <input type="tel" class="form-control" id="mobileNumber" placeholder="Mobile number" [(ngModel)]="customer.mobileNumber" name="mobileNumber" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Email address" [(ngModel)]="customer.email" name="email" required>
+      </div>
+
+      <!-- Address Details -->
+      <div *ngFor="let address of customer.addresses; let i = index">
+        <div class="form-group">
+          <label for="streetNo{{i}}">Street No</label>
+          <input type="text" class="form-control" id="streetNo{{i}}" placeholder="Street number" [(ngModel)]="address.streetNo" name="streetNo{{i}}" required>
+        </div>
+
+        <div class="form-group">
+          <label for="buildingName{{i}}">Building Name</label>
+          <input type="text" class="form-control" id="buildingName{{i}}" placeholder="Building name" [(ngModel)]="address.buildingName" name="buildingName{{i}}" required>
+        </div>
+
+        <div class="form-group">
+          <label for="city{{i}}">City</label>
+          <input type="text" class="form-control" id="city{{i}}" placeholder="City" [(ngModel)]="address.city" name="city{{i}}" required>
+        </div>
+
+        <div class="form-group">
+          <label for="state{{i}}">State</label>
+          <input type="text" class="form-control" id="state{{i}}" placeholder="State" [(ngModel)]="address.state" name="state{{i}}" required>
+        </div>
+
+        <div class="form-group">
+          <label for="country{{i}}">Country</label>
+          <input type="text" class="form-control" id="country{{i}}" placeholder="Country" [(ngModel)]="address.country" name="country{{i}}" required>
+        </div>
+
+        <div class="form-group">
+          <label for="pincode{{i}}">Pincode</label>
+          <input type="text" class="form-control" id="pincode{{i}}" placeholder="Pincode" [(ngModel)]="address.pincode" name="pincode{{i}}" required>
+        </div>
+
+        <button type="button" class="btn btn-danger" (click)="removeAddress(i)">Remove Address</button>
+      </div>
+
+      <button type="button" class="btn btn-primary" (click)="addAddress()">Add Address</button>
+
+      <button class="btn btn-success" type="submit" [disabled]="customerForm.invalid">Submit</button>
+    </form>
+
+    <button class="btn btn-back" (click)="goBack()"><b>Go Back</b></button>
+  </div>
+</body>

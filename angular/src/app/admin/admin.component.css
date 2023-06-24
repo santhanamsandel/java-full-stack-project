@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.container h2 {
+  color: hsl(0, 75%, 44%);
+  background-color: hsl(100, 20%, 97%);
+  padding: 5px;
+  text-align: center;
+  margin-top: -50px;
+  font-size: 38px;
+  border: solid;
+  border-color: rgb(30, 188, 10);
+}
+
+#add-product .content {
+  background-color: rgb(113, 113, 231);
+}
+
+#add-product h3 {
+  color: rgb(59, 96, 197);
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
+ 
+}
+
+#add-product h2 {
+  color: #4e0606;
+  font-size: 20px;
+  font-family: "Helvetica", sans-serif;
+}
+
+
+
+#get-user-list h3 {
+  color: rgb(59, 96, 197);
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
+}
+
+#get-user-list h2 {
+  color: #4e0606;
+  font-size: 20px;
+  font-family: "Helvetica", sans-serif;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 3%;
+  height: 100%;
+  margin-top: -30px;
+}
+
+body {
+  background-image: url('../../assets/picture26.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 90px;
+}
+
+
+
+.admin-component {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #e6dcdc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   margin-top: -30px;
+   opacity: 90%;
+  }
+  
+
+
+  .nav-bar {
+    margin-bottom: 20px;
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav-bar li {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-bar li.active {
+    background-color: #9c3232;
+  }
+  
+  .content {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(16, 1, 1, 0.1);
+  }
+  
+  .active {
+    display: block;
+  }
+  .btn-back {
+    width: 10%;
+    padding: 10px;
+    background-color: rgb(232, 73, 4);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    position: fixed;
+    margin-top: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .custom-padding {
+    padding: 10px;
+  }
+
+  .btn-back:hover {
+    background-color: rgb(5, 39, 66);
+  }

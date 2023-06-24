@@ -1,0 +1,113 @@
+header {
+  background-color: hwb(203 45% 47%);
+  text-align: center;
+  color: hwb(60 1% 16%);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+
+
+}
+.register-form {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items:100;
+  justify-content: center; 
+}
+
+
+body {
+  background-image: url('../../assets/picture11.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.register-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-role{
+  margin-bottom: 25px;
+  width: 40%;
+  height: 40%;
+  
+}
+
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+width: 100%;
+box-sizing: border-box;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+
+.col-md-6.offset-md-3 {
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+max-width: 400px; /* Adjust the maximum width as needed */
+background-color: #f5f5f5; /* Light background color */
+color: #1a0c6c; /* Dark text color */
+font-family: Arial, sans-serif; /* Font style */
+
+}
+
+.btn {
+width: 100%;
+padding: 10px;
+background-color: rgb(235, 229, 236);
+color: gray;
+border: none;
+border-radius: 4px;
+transition: background-color 0.3s;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.btn:hover {
+background-color: rgb(0, 255, 179);
+}
+
+.btn-back {
+width: 10%;
+padding: 8px;
+background-color: #ff6600;
+color: white;
+border: none;
+border-radius: 4px;
+margin-top: 10px;
+position: fixed;
+bottom: 10px;
+right: 155px; 
+margin-right: -70px;/* Adjust the value to move it away from the left side */
+transform: translateX(50%);
+}
+.btn-back:hover {
+background-color: rgb(5, 39, 66);
+}

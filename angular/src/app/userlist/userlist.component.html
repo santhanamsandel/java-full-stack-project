@@ -1,0 +1,30 @@
+<h2 style="text-align:center">User Profiles and Account Details</h2>
+<div class="background-image"></div>
+<div class="card">
+  <div class="card-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Mobile Number</th>
+          <th>Password</th>
+          <th>Role</th>
+          <th> Actions </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.mobile}}</td>
+          <td>{{user.password}}</td>
+          <td>{{user.role}}</td>
+          <td>
+            <button (click) = "updateUser(user.userId)" class = "btn btn-info"> Update</button>
+            <button (click) = "deleteUser(user.userId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+           
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-back" (click)="goBack()"><b>Go Back</b></button>
+    </div>

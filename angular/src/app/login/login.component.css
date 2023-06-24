@@ -1,0 +1,135 @@
+header {
+  background-color: hwb(203 45% 47%);
+  text-align: center;
+  color: hwb(0 6% 94%);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background-image: url('../../assets/Picture2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.register-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    background-color: #d7e3e6; /* Light background color */
+    color: #1a0c6c; /* Dark text color */
+    font-family: Arial, sans-serif; /* Font style */
+  
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 400px; /* Adjust the width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+}
+
+.form-outline {
+  margin-bottom: 20px;
+}
+table {
+  width: 100%; /* Adjust the width as needed */
+  background-color: #f2f2f2; /* Change the table color as desired */
+}
+
+/* Additional styles for table cells or other table elements */
+
+
+
+.register-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: darkblue;
+}
+
+
+
+
+.btn {
+  width: 50%;
+  padding: 10px;
+  background-color: rgb(235, 229, 236);
+  color: gray;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(0, 255, 136);
+}
+
+
+
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  width: 50%;
+  padding: 10px;
+  background-color: rgb(235, 229, 236);
+  color: gray;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(0, 255, 179);
+}
+
+.btn-back {
+  width: 40%;
+  padding: 10px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 5px;
+  position: fixed;
+  bottom: 10px;
+  left: 135px; /* Adjust the value to move it away from the left side */
+  transform: translateX(50%);
+}
+
+.btn-back:hover {
+  background-color: rgb(5, 39, 66);
+}

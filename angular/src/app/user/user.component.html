@@ -1,0 +1,34 @@
+
+
+
+      <html>
+<body>
+  <div class="container">
+    <h2>Welcome To User Page</h2>
+  </div>
+  
+  <div class="admin-component">
+    <div id="add-product" class="content active">
+      <h3>Click Show Product which you like to buy </h3>
+      <button (click)="showProduct()" routerLinkActive="active" 
+      class="nav-link">
+      <b><h2>Show Product</h2></b></button>
+      <!-- Add your content for retrieving user list here -->
+    </div>
+    
+    <div id="add-product" class="content active">
+     
+      
+      <h3>Click Show Product which you like to buy </h3>
+      <button (click)="addDetails()" routerLinkActive="active" 
+      class="nav-link">
+      <b><h2>Add Details</h2></b></button>
+      <!-- Add your content for adding a product here -->
+    </div>
+  
+     
+    <button class="btn btn-back" (click)= "logout()" ><b>Logout</b></button>
+    
+  </div>
+  </body>
+  </html>

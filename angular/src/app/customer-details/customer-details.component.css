@@ -1,0 +1,93 @@
+body {
+  /*background-image: url('../../assets/Picture9.jpg');
+   Additional background properties if needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin-left: 230px;
+  width: 70%;
+  padding: 0;
+}
+
+
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #a20404;
+}
+
+.col-md-6.offset-md-3 {
+  background-color: #8ad0f3;
+  border-radius: 5px;
+  padding: 20px;
+  width: auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 9px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #d06b6b;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.btn-success {
+  display: block;
+  width: 100%;
+  padding: 7px;
+  font-size: 23px;
+  background-color: hsl(60, 15%, 95%);
+  color: hwb(252 1% 81%);
+  border:#d11212;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-success:hover {
+  background-color: #5af0c3;
+}
+
+
+
+#change {
+  color: #060606;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+.btn-back {
+    width: 10%;
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px;
+    position: fixed;
+    bottom: 10px;
+    left: 85%; /* Adjust the value to move it away from the left side */
+    transform: translateX(50%);
+  }
+  
+  .btn-back:hover {
+    background-color: rgb(5, 39, 66);
+  }
+
+.btn-back b {
+  font-weight: bold;
+}

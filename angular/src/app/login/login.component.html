@@ -1,0 +1,26 @@
+<header>
+  <h1>Welcome To Login Page</h1>
+</header>
+<body>
+<div  class="card">
+  
+  <form (ngSubmit)="userLogin()" class="register-form">
+    <div class="form-outline mb-4">
+      <label for="firstName">MobileNo:</label>
+      <input type="text" name="mobileNo" class="form-control" placeholder="mobileNo" [(ngModel)]="login.mobileNo" />
+      </div>
+      <br>
+
+
+     <div class="form-outline mb-4">
+      <label for="firstName">Password:</label>
+      <input type="password" name="password" class="form-control" placeholder="password" [(ngModel)]="login.password" />
+    </div>
+    <br>
+    <button class="btn btn-success" type="submit"><b>Submit</b></button>
+    <button class="btn btn-back" (click)="goBack()"><b>Go Back</b></button>
+  </form>
+  <!--<button class="btn btn-back" (click)="goBack()"><b>Go Back</b></button>-->
+
+</div>
+</body>

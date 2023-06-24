@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h2{
+  color: #ebecf1; /* Change the color to your desired color */
+  font-size: 30px; /* Change the font size to your desired size */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;/* Change the font family to your desired font */
+  font-weight:600/* Make the text bold */
+}
+
+
+p b {
+  color: hwb(30 98% 1%); /* Change the color to your desired color */
+  font-size: 24px; /* Change the font size to your desired size */
+  font-family: 'Roboto', sans-serif;
+/* Change the font family to your desired font */
+  font-weight:600/* Make the text bold */
+}
+
+header {
+    background-color: hwb(0 94% 3%);
+    text-align: center;
+    color: rgb(1, 0, 3);
+    font-family: Georgia, serif; 
+    
+}
+  
+  body {
+    background-image: url('../../assets/picture27.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-position: center center;
+    background-attachment: fixed; /* optional, fixes the background image while scrolling */
+    height: 100vh; /* make sure the background image covers the entire viewport */
+    margin: 0; /* remove default margins */
+    
+  }
+ 
+
+  
+  .hero {
+    text-align: center;
+    padding: 40px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    color: rgb(40, 2, 2);
+  }
+  
+  /* Rest of your CSS styles */
+
+  .register-login {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px;
+    color: rgb(65, 23, 214);
+    font-family: "Your Beautiful Font", sans-serif; /* Replace "Your Beautiful Font" with the actual font name */
+    background-color: #d7f4da; /* Light brown background color */
+  }
+  
+  .register{ text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px;
+
+  }
+  .login {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #e65c00;
+  }
+  
+  footer {
+    background-color: #f0f0f0;
+    
+    text-align: center;
+  }

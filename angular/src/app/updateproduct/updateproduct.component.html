@@ -1,0 +1,53 @@
+<header>
+  <h1>Update Product Section</h1>
+</header>
+<body class="bg-image">
+  <div class="col-md-6 offset-md-3">
+    <form (ngSubmit)="onSubmit()" class="register-form" #productForm="ngForm">
+      <div class="form-group">
+        <label for="productName" id="change">Product Name</label>
+        <input type="text" class="form-control" id="productName" placeholder="Product name"
+          [(ngModel)]="product.productName" name="productName" required>
+       
+
+    
+        <label for="price" id="change">Price</label>
+        <input type="number" class="form-control" id="price" placeholder="Price" 
+          [(ngModel)]="product.price" name="price" required>
+       
+      
+
+      
+        <label for="specification" id="change">Specification</label>
+        <textarea class="form-control" id="specification" placeholder="Specification" 
+          [(ngModel)]="product.specification" name="specification" required></textarea>
+        
+      
+        <label for="manufacturer" id="change">Manufacturer</label>
+        <input type="text" class="form-control" id="manufacturer" placeholder="Manufacturer"
+          [(ngModel)]="product.manufacturer" name="manufacturer" required>
+        
+      
+        <label for="quantity" id="change">Quantity</label>
+        <input type="number" class="form-control" id="quantity" placeholder="Quantity"
+          [(ngModel)]="product.quantity" name="quantity" required>
+       
+     
+        <label for="category" id="change">Category</label>
+        <select class="form-control" id="category" [(ngModel)]="product.category" 
+          name="category" required>
+          <option value="" disabled selected>Select a category</option>
+          <option value="MOBILES">Mobiles</option>
+          <option value="LAPTOP">Laptops</option>
+          <option value="TABLET">Tablets</option>
+          <option value="SMARTTV">Smart TVs</option>
+          <option value="CAMERA">Cameras</option>
+        </select>
+       
+      </div>
+      <button class="btn btn-success" type="submit" [disabled]="productForm.invalid">Submit</button>
+    </form>
+
+    <button class="btn btn-back" (click)="goBack()"><b>Go Back</b></button>
+  </div>
+</body>

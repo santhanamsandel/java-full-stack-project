@@ -1,0 +1,48 @@
+<header>
+  <h1>Welcome to Registration Page</h1>
+</header>
+<body>
+<div class="col-md-6 offset-md-3">
+ 
+  <form (ngSubmit)="onSubmit()" class="register-form">
+
+    
+    <div class="form-group">
+      <label for="firstName">Name</label>
+      <input type="text" class="form-control" id="firstName"  
+      placeholder="first name" [(ngModel)]="user.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="mobile">Mobile</label>
+      <input type="text" class="form-control" id="mobile"  placeholder="mobile no"
+       [(ngModel)]="user.mobile" name="mobile">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="password" 
+    [(ngModel)]="user.password" name="password">
+    </div>
+    
+    <!-- <div class="form-group">
+      <label for="role">Role</label>
+      <input type="text" class="form-control" id="role" placeholder="role"
+        [(ngModel)]="user.role" name="role">
+    </div> -->
+    <div class="form-role">
+      <label for="role" >Role</label>
+      <select class="form-control" id="role" [(ngModel)]="user.role" 
+        name="role" required>
+        <option value="" disabled selected>Select a Role</option>
+        <option value="ADMIN">ADMIN</option>
+        <option value="USER">USER</option>
+      </select>
+</div>
+    <button class="btn btn-success" type="submit">Submit</button>
+
+  </form>
+  
+  <button class="btn btn-back" (click)="goBack()"><b>Go Back</b></button>
+</div>
+</body>

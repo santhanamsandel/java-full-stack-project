@@ -1,0 +1,33 @@
+<h1>Modify Your Existing Details</h1>
+  
+    <form (ngSubmit)="onSubmit()" class="update-form">
+    <div class="container">
+      <table class="user-form">
+      <tr>
+        <td><b>Name</b></td>
+        <td><input type="text" class="form-control" id="name" placeholder="name" [(ngModel)]="users.name" name="name"></td>
+      </tr>
+      <tr>
+        <td>Mobile</td>
+        <td><input type="text" class="form-control" id="mobile" placeholder="mobile No"[(ngModel)]="users.mobile" name="mobile"></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td><input type="text" class="form-control" id="password1"
+            placeholder="password" [(ngModel)]="users.password" name="password"></td>
+      </tr>
+      <tr>
+        <td>Role</td>
+        <td><input type="text" class="form-control" id="role" placeholder="role" [(ngModel)]="users.role" name="role"></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="submit-cell"><button class="btn btn-success" 
+            type="submit"><b>Submit</b></button>
+         </td>
+    </tr>
+    <br>
+    <br>
+    <button class="btn btn-back" (click)="goBack()"><b>Go Back</b></button>
+    </table>
+    
+  </div></form>
